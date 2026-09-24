@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>판다가 판다 개인정보처리방침</title>
+<title>푸바우푸바우 개인정보처리방침</title>
 <style>
   body{margin:0;background:#f6f8f2;color:#1f2a1c;font:16px/1.7 -apple-system,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
   main{max-width:760px;margin:0 auto;padding:32px 20px 64px}
@@ -21,16 +21,26 @@
 <body>
 <main>
 
-<h1>「판다가 판다」 개인정보처리방침</h1>
-<p class="meta">운영자: 라이트테크 · 문의: <a href="mailto:fkdlxmxpzm@gmail.com">fkdlxmxpzm@gmail.com</a><br>시행일: 2026년 9월 14일</p>
+<h1>「푸바우푸바우」 개인정보처리방침</h1>
+<p class="meta">운영자: 라이트테크 · 문의: <a href="mailto:fkdlxmxpzm@gmail.com">fkdlxmxpzm@gmail.com</a><br>시행일: 2026년 9월 24일 (이전: 2026년 9월 14일)</p>
 
-<p>라이트테크(이하 “운영자”)는 모바일 게임 「판다가 판다」(패키지명 kr.ltech.pandagame, 이하 “앱”)를 이용하는 분의 개인정보를 소중히 다루며, 「개인정보 보호법」 등 관련 법령을 지킵니다. 이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
+<p>라이트테크(이하 “운영자”)는 모바일 게임 「푸바우푸바우」(패키지명 kr.ltech.pandagame, 이하 “앱”)를 이용하는 분의 개인정보를 소중히 다루며, 「개인정보 보호법」 등 관련 법령을 지킵니다. 이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
 
 <h2>1. 회원가입과 직접 수집하는 정보</h2>
 <p>앱에는 회원가입이나 로그인이 없습니다. 운영자는 이름, 전화번호, 이메일, 주소, 연락처 목록, 사진, 정확한 위치 같은 정보를 직접 수집하지 않습니다.</p>
 
 <h2>2. 기기에 저장되는 정보</h2>
-<p>게임 진행 정보(열린 밭, 별, 점수, 잎(게임 내 재화), 도구 개수, 선택한 스킨, 진행 중인 판, 시도 기록, 성장 보상 수령 여부, 소리·언어 설정, 튜토리얼 완료 여부)는 이용자의 기기에 저장되며 운영자의 서버로 전송되지 않습니다. 앱 데이터를 지우거나 앱을 삭제하면 기기에서 삭제됩니다. 다만 기기의 Android 백업 기능이 켜져 있으면 이 정보가 이용자 본인의 Google 계정 백업에 포함되어 재설치 시 복원될 수 있습니다.</p>
+<p>게임 진행 정보(열린 밭, 별, 점수, 잎(게임 내 재화), 도구 개수, 선택한 스킨, 진행 중인 판, 시도 기록, 성장 보상 수령 여부, 소리·언어 설정, 튜토리얼 완료 여부)는 이용자의 기기에 저장됩니다. 아래 2-1항의 경우를 빼고는 운영자의 서버로 전송되지 않습니다. 앱 데이터를 지우거나 앱을 삭제하면 기기에서 삭제됩니다. 다만 기기의 Android 백업 기능이 켜져 있으면 이 정보가 이용자 본인의 Google 계정 백업에 포함되어 재설치 시 복원될 수 있습니다.</p>
+
+<h2>2-1. 서버로 보내는 정보 (Google Firebase)</h2>
+<p>운영자는 Google LLC의 Firebase Cloud Firestore(저장 위치: 대한민국 서울, asia-northeast3)를 사용해 아래 정보만 서버에 보관합니다. 이름·이메일·전화번호·광고 ID 등 개인을 알아볼 수 있는 정보는 보내지 않습니다.</p>
+<div class="wrap"><table>
+<tr><th>기능</th><th>보내는 정보</th><th>목적</th><th>보관 기간</th></tr>
+<tr><td>랭킹 도전 나라 순위</td><td>나라 코드(휴대폰 통신망·시간대·언어 설정으로 추정, 위치 권한 사용 안 함), 그날 도전·통과 횟수(하루 1번씩 1씩 더함). 누가 보냈는지는 저장하지 않습니다.</td><td>나라별 통과 수·세계 통과율 표시</td><td>날짜별 합계로 보관</td></tr>
+<tr><td>기록 옮기기(이어하기 코드)</td><td>이용자가 '내 코드 만들기'를 눌렀을 때만: 무작위 10자리 코드와 게임 진행 정보(2항의 항목, 진행 중인 판 제외). 이후 판을 깰 때 자동으로 갱신됩니다.</td><td>폰을 바꿔도 기록을 이어 쓰기</td><td>삭제 요청 시까지. 코드를 모르면 누구도 조회할 수 없습니다.</td></tr>
+<tr><td>오류 보고</td><td>앱 오류가 났을 때 오류 메시지, 오류 위치, 앱 버전, 기기 종류·브라우저 정보(User-Agent), 날짜(한 번 실행에 최대 3건)</td><td>오류 수정</td><td>최대 1년 보관 후 삭제</td></tr>
+</table></div>
+<p>기록 옮기기 정보를 지우려면 코드를 적어 아래 이메일로 요청해 주세요. 지체 없이 삭제합니다.</p>
 
 <h2>3. 광고(Google AdMob)</h2>
 <p>앱에는 Google LLC의 광고 서비스 AdMob의 SDK가 포함되어 있으며, 이 SDK는 앱 실행 시 초기화될 수 있습니다. 광고는 이용자가 도구 충전 버튼을 눌러 보상형 광고 보기를 직접 선택한 경우에만 표시됩니다(현재 배포 버전은 광고를 표시하지 않습니다). 광고 SDK를 통해 Google이 다음 정보를 자동으로 수집·처리할 수 있습니다.</p>
@@ -56,7 +66,7 @@
 </ul>
 
 <h2>6. 제3자 제공과 처리 위탁</h2>
-<p>운영자는 이용자의 개인정보를 판매하지 않습니다. 위 3·4항에 적은 Google LLC(광고, 결제) 외의 제3자에게 제공하지 않으며, 법령에 따른 요청이 있는 경우는 예외입니다.</p>
+<p>운영자는 이용자의 개인정보를 판매하지 않습니다. 위 2-1·3·4항에 적은 Google LLC(서버 보관, 광고, 결제) 외의 제3자에게 제공하지 않으며, 법령에 따른 요청이 있는 경우는 예외입니다.</p>
 <p><b>국외 이전</b></p>
 <div class="wrap"><table>
 <tr><th>받는 자</th><td>Google LLC (문의: <a href="https://support.google.com/policies/contact/general_privacy_form">Google 개인정보 문의</a>)</td></tr>
@@ -85,14 +95,23 @@
 
 <hr>
 
-<h1>Panda Game (판다가 판다) Privacy Policy</h1>
-<p class="meta">Operator: LightTech (라이트테크) · Contact: <a href="mailto:fkdlxmxpzm@gmail.com">fkdlxmxpzm@gmail.com</a><br>Effective date: September 14, 2026</p>
+<h1>Pubau Pubau (푸바우푸바우) Privacy Policy</h1>
+<p class="meta">Operator: LightTech (라이트테크) · Contact: <a href="mailto:fkdlxmxpzm@gmail.com">fkdlxmxpzm@gmail.com</a><br>Effective date: September 24, 2026 (previous: September 14, 2026)</p>
 
 <h2>1. No accounts, no direct collection</h2>
 <p>The app (package kr.ltech.pandagame) has no sign-up or login. We do not directly collect your name, phone number, email, address, contacts, photos, or precise location.</p>
 
 <h2>2. Data stored on your device</h2>
-<p>Game progress (unlocked fields, stars, scores, leaves (in-game currency), tools, selected skin, the board in progress, attempt records, milestone rewards, sound and language settings, tutorial status) is stored on your device and is not sent to our servers. It is deleted when you clear the app's data or uninstall the app; if Android backup is enabled, it may be included in your own Google account backup and restored on reinstall.</p>
+<p>Game progress (unlocked fields, stars, scores, leaves (in-game currency), tools, selected skin, the board in progress, attempt records, milestone rewards, sound and language settings, tutorial status) is stored on your device. Except as described in section 2-1, it is not sent to our servers. It is deleted when you clear the app's data or uninstall the app; if Android backup is enabled, it may be included in your own Google account backup and restored on reinstall.</p>
+
+<h2>2-1. Data sent to our server (Google Firebase)</h2>
+<p>We use Google LLC's Firebase Cloud Firestore (stored in Seoul, Korea, asia-northeast3) to keep only the following. We do not send your name, email, phone number, Advertising ID, or other information that identifies you.</p>
+<ul>
+<li><b>Ranking challenge country ranking:</b> a country code (estimated from your phone's network, time zone, or language setting; no location permission is used) and that day's try/clear counts (each added once per day). We do not store who sent them. Kept as daily totals to show clears per country and the world clear rate.</li>
+<li><b>Move progress (transfer code):</b> only when you tap "Make my code": a random 10-character code and your game progress (the items in section 2, excluding the board in progress), updated automatically when you clear a board. Kept until you ask us to delete it; no one can look it up without the code.</li>
+<li><b>Error reports:</b> when the app hits an error, the error message and location, app version, device/browser information (User-Agent), and date (up to 3 per launch), used to fix bugs and deleted within 1 year.</li>
+</ul>
+<p>To delete transfer-code data, email us the code and we will delete it without delay.</p>
 
 <h2>3. Advertising (Google AdMob)</h2>
 <p>The app includes the Google AdMob SDK, which may initialize when the app starts. Ads are shown only when you choose to watch a rewarded ad to refill a tool (the current release shows no ads). Through the SDK, Google may automatically collect and process device identifiers (Advertising ID, app set ID), approximate location derived from IP address, app interactions (launches, taps, ad views and clicks), and diagnostic information, for ad delivery and measurement, analytics, and fraud prevention; the SDK may use Android Topics and Attribution APIs. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner apps</a>. Where consent is required (e.g. EEA/UK), Google's consent form is shown before a rewarded ad is requested. You can reset or delete your Advertising ID in your device settings.</p>
@@ -104,7 +123,7 @@
 <p>On-device data is deleted as described in section 2. Advertising data follows Google's retention policies. Any data we hold (such as support emails) is deleted without delay once its purpose is fulfilled, using methods that prevent recovery.</p>
 
 <h2>6. Sharing</h2>
-<p>We do not sell personal information. Apart from Google LLC (ads and billing) as described above, we do not share it with third parties except when required by law. Data collected by Google through the ads SDK is transferred over encrypted connections to Google LLC and processed outside Korea, including in the United States, for the purposes in section 3 and retained under Google's policies. You can refuse by deleting or resetting your Advertising ID, without any restriction on playing the game.</p>
+<p>We do not sell personal information. Apart from Google LLC (server storage, ads and billing) as described above, we do not share it with third parties except when required by law. Data collected by Google through the ads SDK is transferred over encrypted connections to Google LLC and processed outside Korea, including in the United States, for the purposes in section 3 and retained under Google's policies. You can refuse by deleting or resetting your Advertising ID, without any restriction on playing the game.</p>
 
 <h2>7. Children</h2>
 <p>The app is intended for users aged 13 and older (14 and older in Korea). We do not collect personal information from children under 14 in Korea without a legal guardian's consent, and will delete it without delay if we learn it was collected.</p>
